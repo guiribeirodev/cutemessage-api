@@ -2,9 +2,9 @@
   "name": "message-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "npm start server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

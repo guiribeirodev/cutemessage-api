@@ -1,11 +1,16 @@
 const cors = require('cors');
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 
 app.get('/', (req, res) => {
-  return res.json({ message: 'okay' });
+  return res.sendFile(__dirname + '/index.html');
 });
 
-// app.listen('4567');
+app.get('/server', (req, res) => {
+  return res.json({ message: 'hi baby' });
+});
+
+app.listen(port);
