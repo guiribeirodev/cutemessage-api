@@ -1,19 +1,20 @@
 {
   "name": "message-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "API de mensagens motivadoras aleatórias",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Guilherme Ribeiro (guiribeirodev)",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.13"
   }
 }
